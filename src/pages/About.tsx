@@ -35,7 +35,7 @@ const About: React.FC = () => {
       {/* Hero section */}
       <section className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">About StyleAI</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">About VogueVirtue</h1>
           <p className="text-xl text-indigo-100 max-w-3xl mx-auto">
             We're on a mission to revolutionize personal style through the power of artificial intelligence.
           </p>
@@ -49,13 +49,13 @@ const About: React.FC = () => {
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
             <div className="prose prose-lg">
               <p>
-                StyleAI was founded in 2023 with a simple but ambitious goal: to make personal styling accessible to everyone. 
+                VogueVirtue was founded in 2023 with a simple but ambitious goal: to make personal styling accessible to everyone. 
                 We noticed that while fashion was becoming more democratic through e-commerce and social media, truly personalized 
                 style advice remained a luxury reserved for the few.
               </p>
               <p>
                 Our team of fashion experts, data scientists, and developers came together to build a solution that combines 
-                the artistic sensibility of fashion with the analytical power of artificial intelligence. The result is StyleAI 
+                the artistic sensibility of fashion with the analytical power of artificial intelligence. The result is VogueVirtue 
                 - an intelligent fashion assistant that understands your personal style, preferences, and lifestyle.
               </p>
               <p>
@@ -73,7 +73,7 @@ const About: React.FC = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Our Technology</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto text-center mb-12">
-            Behind StyleAI is a sophisticated system that combines computer vision, natural language processing, and 
+            Behind VogueVirtue is a sophisticated system that combines computer vision, natural language processing, and 
             recommendation algorithms to understand fashion at a deep level.
           </p>
           
@@ -94,7 +94,7 @@ const About: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2">Personalization</h3>
               <p className="text-gray-600">
-                StyleAI learns your preferences over time, adapting recommendations to your evolving taste and needs.
+                VogueVirtue learns your preferences over time, adapting recommendations to your evolving taste and needs.
               </p>
             </div>
             
@@ -126,7 +126,7 @@ const About: React.FC = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Our Team</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto text-center mb-12">
-            Meet the passionate experts behind StyleAI who are combining fashion expertise with cutting-edge technology.
+            Meet the passionate experts behind VogueVirtue who are combining fashion expertise with cutting-edge technology.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
@@ -155,7 +155,7 @@ const About: React.FC = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-6 text-center">Our Values</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto text-center mb-12">
-            The principles that guide everything we do at StyleAI.
+            The principles that guide everything we do at VogueVirtue.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -197,7 +197,7 @@ const About: React.FC = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Style?</h2>
           <p className="text-xl text-indigo-100 max-w-2xl mx-auto mb-8">
-            Join thousands of users who have discovered their unique style with StyleAI.
+            Join thousands of users who have discovered their unique style with VogueVirtue.
           </p>
           <Link 
             to="/signup" 
