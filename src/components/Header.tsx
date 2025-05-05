@@ -36,7 +36,7 @@ const Header: React.FC = () => {
           <Link to="/" className="flex items-center space-x-2">
             <ShirtIcon className="w-8 h-8 text-indigo-600" />
             <span className="text-xl font-bold bg-gradient-to-r from-indigo-600 to-violet-500 bg-clip-text text-transparent">
-              StyleAI
+              VogueVirtue
             </span>
           </Link>
 
