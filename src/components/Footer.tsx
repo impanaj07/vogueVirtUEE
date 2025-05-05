@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
           <div className="col-span-1 md:col-span-1">
             <Link to="/" className="flex items-center space-x-2">
               <ShirtIcon className="w-8 h-8 text-indigo-400" />
-              <span className="text-xl font-bold text-white">StyleAI</span>
+              <span className="text-xl font-bold text-white">VogueVirtue</span>
             </Link>
             <p className="mt-4 text-gray-400 text-sm">
               AI-powered fashion recommendations tailored to your personal style and preferences.
