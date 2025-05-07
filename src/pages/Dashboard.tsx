@@ -3,7 +3,8 @@ import { useFashion } from '../context/FashionContext';
 import { useUser } from '../context/UserContext';
 import RecommendationList from '../components/RecommendationList';
 import { Sun, Cloud, CloudRain, Snowflake, Wind, Calendar, Settings } from 'lucide-react';
-
+import { useNavigate } from 'react-router-dom';
+import vogue from '../assets/vogue.jpeg'; // adjust path as needed
 const Dashboard: React.FC = () => {
   const { user } = useUser();
   const { recommendations, savedOutfits, generateRecommendations, isLoading } = useFashion();
@@ -38,9 +39,10 @@ const Dashboard: React.FC = () => {
     }
     generateRecommendations(selectedOccasion || undefined, weather === selectedWeather ? undefined : weather);
   };
-  
+  const navigate = useNavigate();
   return (
-    <div className="min-h-screen bg-gray-50 pt-24 pb-12">
+   <div className="min-h-screen bg-gray-50 pt-24 pb-12">
+  
       <div className="container mx-auto px-4">
         {/* Welcome section */}
         <div className="bg-gradient-to-r from-purple-600 to-indigo-600 rounded-xl shadow-lg p-6 mb-8 text-white">
@@ -61,7 +63,29 @@ const Dashboard: React.FC = () => {
             </div>
           </div>
         </div>
-        
+         {/* Poster section */}
+<div
+  className="relative h-64 mb-8 rounded-xl overflow-hidden shadow-lg"
+  style={{
+    backgroundImage: `url(${vogue})`, // Replace with actual image path
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  }}
+>
+  <div className="absolute inset-0 bg-gradient-to-r from-purple-800/70 to-indigo-800/70 flex items-center justify-center text-center">
+    <div>
+      <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 drop-shadow-md">
+        Find Your Perfect Look
+      </h2>
+      <button
+        onClick={() => navigate('/best-outfit')}
+        className="bg-white/20 hover:bg-white/30 text-white font-semibold px-6 py-2 rounded-lg border border-white backdrop-blur transition-colors"
+      >
+        Best Outfit Recommender
+      </button>
+    </div>
+  </div>
+</div>
         {/* Filters and tabs */}
         <div className="mb-8">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0">

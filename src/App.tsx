@@ -13,7 +13,7 @@ import ContactUs from './pages/ContactUs';
 import WardrobePage from './pages/WardrobePage';
 import StyleProfile from './pages/StyleProfile';
 import Footer from './components/Footer';
-
+import BestOutfit from './pages/BestOutfit';
 function App() {
   return (
     <Router>
@@ -27,6 +27,7 @@ function App() {
                 <Route path="/signin" element={<SignIn />} />
                 <Route path="/signup" element={<SignUp />} />
                 <Route path="/about" element={<About />} />
+                <Route path='/best-outfit' element={<BestOutfit/>}/>
                 <Route path="/contact" element={<ContactUs />} />
                 <Route 
                   path="/dashboard" 
