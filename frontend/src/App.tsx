@@ -14,6 +14,7 @@ import WardrobePage from './pages/WardrobePage';
 import StyleProfile from './pages/StyleProfile';
 import Footer from './components/Footer';
 import BestOutfit from './pages/BestOutfit';
+import SimilarOutfits from './pages/SimilarOutfits';
 function App() {
   return (
     <Router>
@@ -28,6 +29,7 @@ function App() {
                 <Route path="/signup" element={<SignUp />} />
                 <Route path="/about" element={<About />} />
                 <Route path='/best-outfit' element={<BestOutfit/>}/>
+                <Route path='/similar-outfits' element={<SimilarOutfits/>}/>
                 <Route path="/contact" element={<ContactUs />} />
                 <Route 
                   path="/dashboard" 

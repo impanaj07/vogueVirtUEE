@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { useNavigate } from 'react-router-dom';
 const BestOutfit: React.FC = () => {
   const [images, setImages] = useState<File[]>([]);
   const [generatedOutfit, setGeneratedOutfit] = useState<any>(null);
@@ -18,7 +18,7 @@ const BestOutfit: React.FC = () => {
       footwear: images[2],
     });
   };
-
+const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-gray-50 pt-24 pb-12">
       <div className="container mx-auto px-4">
@@ -63,6 +63,15 @@ const BestOutfit: React.FC = () => {
             Generate Outfit
           </button>
         </div>
+      
+      {/* Find Similar Outfits Button */}
+      <button
+      onClick={() => {
+        navigate('/similar-outfits');}}
+      className="w-full mt-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold py-2 rounded-lg hover:from-purple-700 hover:to-indigo-700 transition-colors"
+      >
+      Find Similar Outfits
+      </button>
 
         {/* Display Generated Outfit */}
         {generatedOutfit && (
